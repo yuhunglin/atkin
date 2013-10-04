@@ -3,6 +3,11 @@ require './atkin'
 
 class PrimeTable < Thor
   desc "print_table PRIMES", "Print a multiplication table of the first-N PRIMES (default PRIMES=10)"
+  long_desc <<-LONGDESC
+    `print_table PRIMES` will print out a multiplication table for the first-N PRIMES.
+
+    The default value if PRIMES is omitted is 10. Non-integer values and 0 will return nothing.
+  LONGDESC
   def print_table(num_primes=10)
     num_primes = Integer(num_primes.to_s, 10) rescue nil
     return "" unless num_primes && num_primes > 0

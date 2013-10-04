@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'thor'
+gem 'thor', "~> 0.18.1"
 gem "rspec", "~> 2.14.1"
-gem 'simplecov'
+gem 'simplecov', "~> 0.7.1"
